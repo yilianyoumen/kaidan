@@ -1,0 +1,27 @@
+
+    <header class="cent-header">
+        <p class="left"><i class="fa fa-angle-left f16"></i></p>
+        <p class="center">交易详情</p>
+        <p class = "right" ng-click = "look()">查看余额</p>
+    </header>
+
+
+    <section class="detail-section">
+        <div class="big">
+            <div class="detail">
+                <span class="left">充值金额</span>
+                <span class="right size-big">￥{{txt}}</span>
+            </div>
+
+            <p class="name">
+                <span class="left">支付时间</span>
+                <span class="right">{{data|date:"yyyy年MM月dd日 HH:mm:ss"}}</span>
+            </p>
+            <p class="name">
+                <span class="left">交易单号</span>
+                <span class="right">20170204180610000001</span>
+            </p>
+        </div>
+
+
+    </section>

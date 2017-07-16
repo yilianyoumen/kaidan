@@ -1,0 +1,31 @@
+<header class="cent-header">
+        <p class="left" ui-sref = "cardmessage"><i class="fa fa-angle-left f16"></i></p>
+        <p class="center">绑定卡片</p>
+
+    </header>
+    <section class="bind-section">
+        <p class="hint"><i class="fa fa-exclamation-circle"></i> 仅能绑定与您购物卡登记信息一致的卡片</p>
+        <p class="card-info">卡片信息</p>
+        <p class="info-message">
+            <span class="left">卡号</span>
+            <span class="right"><input type="text" placeholder="请输入正面卡号(19位数字)" ng-model = "faceCard"></span>
+        </p>
+        <p class="info-message">
+            <span class="left">卡密码</span>
+            <span class="right"><input type="password" placeholder="请输入背面密码(6位数字)" ng-model = "backCard"></span>
+        </p>
+
+        <p class="card-info">持卡人信息</p>
+        <p class="info-message">
+            <span class="left">姓名</span>
+            <span class="right"><input type="text" placeholder="请输入购卡时登记的姓名" ng-model = "name"></span>
+        </p>
+        <p class="info-message">
+            <span class="left">身份证</span>
+            <span class="right"><input type="text" placeholder="请输入购卡时登记的身份证号码" ng-model = "ID"></span>
+        </p>
+        <p class="true-bind" ng-click = "check()">
+            <button >确认绑定</button>
+        </p>
+
+    </section>

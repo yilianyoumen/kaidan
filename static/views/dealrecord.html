@@ -1,0 +1,22 @@
+
+    <header class="cent-header info-header">
+        <p class="left"><i class="fa fa-angle-left f16"></i></p>
+        <p class="center">交易记录</p>
+        <p class="right" ng-click = "look()">查看余额</p>
+    </header>
+
+
+    <section class="deal-section">
+        <div class="time">2017年2月</div>
+        <div class="classify">
+            <dl>
+                <dt><img src="images/gouwuche_03.png" alt=""></dt>
+                <dd>
+                    <h4>{{name}}</h4>
+                    <p>{{data|date:"MM月dd日 HH:mm:ss"}}</p>
+                </dd>
+                <p class="money">-{{price}}.00</p>
+            </dl>
+            
+        </div>
+    </section>

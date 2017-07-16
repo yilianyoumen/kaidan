@@ -1,0 +1,59 @@
+<div class="mark" ng-show = "flag1">
+    <div>
+    <dl>
+        <dt><img src="images/success.png" alt=""></dt>
+        <dd>
+        <p>{{success}}</p>
+        <p>{{info}}</p>
+        <p><button ng-click="sure1()" id = "btn">确认</button></p>
+        </dd>
+    </dl>
+    </div>
+</div>
+<div class="mark" ng-show = "flag2">
+    <div>
+    <dl>
+        <dt><img src="images/fail.png" alt=""></dt>
+        <dd>
+        <p>{{success}}</p>
+        <p>{{info}}</p>
+        <p><button ng-click="sure1()" id = "btn">确认</button></p>
+        </dd>
+    </dl>
+    </div>
+</div>
+
+<header class="payfor-header">
+    <p class="left" ui-sref = "sureindent"><i class = "fa fa-angle-left f16" ></i></p>
+    <p class="center">银行卡支付</p>
+</header>
+<section class = "fund-section">
+    <div class="top2">
+        <dl>
+            <dt>
+                <img src="images/huiyuanka_03.png" alt="">
+            </dt>
+            <dd>
+                <p>￥{{txt}}.00</p>
+                <p>卡号:{{card}}</p>
+            </dd>
+        </dl>
+    </div>
+    <div class = "pass-section">
+        <p>
+            <span>付款卡号</span>
+            <input type="text" placeholder = "请输入卡正面卡号(19位数字)"
+            ng-model = "faceCard">
+        </p>
+        <p>
+            <span>付款卡密</span>
+            <input type="password" placeholder = "请输入卡背面密码(6位数字)" ng-model = "backCard">
+        </p>
+    </div>
+		<span class = "sps">
+			仅支持非记名卡或本人记名卡内余额进行自今年归集
+		</span>
+    <p class = "btn">
+        <button ng-click = "sure()">确认</button>
+    </p>
+</section>

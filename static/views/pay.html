@@ -1,0 +1,40 @@
+
+    <header class="payfor-header">
+        <p class="left"><i class = "fa fa-angle-left f16" ></i></p>
+        <p class="center">付款</p>
+    </header>
+    <section class="payfor-section">
+        <dl>
+            <dt><img src="images/gouwuche_03.png" alt=""></dt>
+            <dd >{{namee}}</dd>
+        </dl>
+        <p class = "consume">
+            消费总额
+            <span class = "right">{{text}}</span>
+        </p>
+      </section>  
+    <footer class="payfor-footer">
+        <div class = "cumlate" id = "down" ng-click = "get($event)">
+            <div class = "ri">
+                <span num = "1">1</span>
+                <span num = "2">2</span>
+                <span num = "3">3</span>
+                <span num = "4">4</span>
+                <span num = "5">5</span>
+                <span num = "6">6</span>
+                <span num = "7">7</span>
+                <span num = "8">8</span>
+                <span num = "9">9</span>
+                <span class = "zero" num = '0'>0</span>
+                <span num = ".">.</span>
+            </div>
+            <div class = "lf">
+                <span id = "back">
+                   退格
+                </span>
+                <span ng-click = "sure3()">
+                    {{sure}}
+                </span>
+            </div>
+        </div>
+    </footer>

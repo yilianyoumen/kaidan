@@ -1,0 +1,51 @@
+
+    <div class="mark2" ng-show="flag">
+        <div class="cont">
+            <div class="header">
+                <p class="center">设置新的密码</p>
+                <p class="right" ng-click = "del()">&times;</p>
+            </div>
+            <div class="section">
+                <div class="pwd">
+                    <input type="password" placeholder="请输入新密码" ng-model = "text">
+                </div>
+                <div class="number">
+                    <p class="tit">
+                        本服务由先锋支付提供
+                    </p>
+                    <div class="num"  ng-click = "get($event)">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span  ng-click = "sure3()">确定</span>
+                        <span>0</span>
+                        <span>退格</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<header class="payfor-header">
+        <p class="left" ui-sref = "resetpwd"><i class = "fa fa-angle-left f16" ></i></p>
+        <p class="center">重置密码</p>
+    </header>
+    <section class = "pwd-section">
+		<p class="send">
+			我们已发送验证码到您的手机 <br> 135****0001
+		</p>
+		<div class="code">
+			<span>{{checkCode}} <input type="text"></span>
+			<span ng-click = "send()">重发短信</span>
+		</div>
+		<p class = "btn" ng-click="next()">
+			<button ng-click = "next()">下一步</button>
+		</p>
+    </section>

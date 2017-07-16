@@ -1,0 +1,11 @@
+var express = require("express")
+var app = express()
+app.use(express.static("./static"))
+//app.set("views",__dirname+"/views/")
+//app.set("view engine","ejs")
+var bodyparser = require("body-parser")
+app.use(bodyparser.urlencoded({extended:true}))
+require("./config/config.js")(app)
+app.listen(8085,function(){
+    console.log("8085")
+})

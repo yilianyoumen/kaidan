@@ -1,0 +1,28 @@
+
+    <header class="cent-header">
+        <p class="left" ui-sref = "bindcard"><i class="fa fa-angle-left f16"></i></p>
+        <p class="center">充值</p>
+
+    </header>
+
+
+    <section class="rech-section">
+        <div class="card-num">
+            卡号 <span>{{card}}</span>
+        </div>
+        <div class="card-residue">
+            卡内余额：¥{{total}}.00，最多可充值{{total}}.00
+        </div>
+        <div class="money">
+            <p class="choose-money">请选择金额</p>
+            <ul>
+                <set-class brr = "arr"></set-class>  
+            </ul>
+        </div>
+        <div class="custom">
+            <input type="text" placeholder="请输入自定义金额" ng-blur = "get()" ng-model = "fund" id = "money">
+        </div>
+        <div class="next">
+            <button ng-click = "next()">下一步</button>
+        </div>
+    </section>

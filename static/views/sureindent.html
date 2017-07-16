@@ -1,0 +1,45 @@
+
+	<header class="payfor-header">
+		<p class="left" ui-sref = "recharge"><i class = "fa fa-angle-left f16" ></i></p>
+		<p class="center">确认订单</p>
+	</header>
+	<section class = "fund-section">
+		<div class="top2">
+			<dl>
+				<dt>
+					<img src="images/huiyuanka_03.png" alt="">
+				</dt>
+				<dd>
+					<p>￥{{txt}}</p>
+					<p>卡号：{{card}}</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="top2 top3">
+			<dl class = "dls">
+				<dt>
+					<img src="images/yinhangka_03.png" alt="">
+				</dt>
+				<dd>
+					<p>卡资金归集</p>
+					<p>付款卡仅支持非记名卡或本人记名卡</p>
+					<input type="radio" id = "ck2" name = "ck">
+						<label for="ck2" class = "ck-red rod" ng-click = "ind(2)"><span id = "round1"></span></label>
+				</dd>
+			</dl>
+			<dl class = "dls">
+				<dt>
+					<img src="images/kazijin_06.png" alt="">
+				</dt>
+				<dd>
+					<p>银行卡支付</p>
+					<p>安全急速支付，无需开通网银</p>
+						<input type="radio" id = "ck5" name = "ck">
+						<label for="ck5" class = "ck-red rod" ng-click = "ind(1)"><span id = "round1"></span></label>
+				</dd>
+			</dl>
+		</div>
+		<p class = "btn">
+			<button ng-click = "sure2()">确认支付￥{{txt}}.00</button>
+		</p>
+    </section>
